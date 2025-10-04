@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio of successful projects">
+    <title>Gallery - Creative Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">Creative<span>.</span></a>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in">Our Work</h1>
+                <p class="fade-in">Explore our portfolio of successful projects</p>
+            </div>
+        </section>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Project 1 -->
+                    <article class="gallery-item" data-category="web">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Modern E-Commerce Platform</h3>
+                            <p class="category">Web Design</p>
+                            <p class="description">A sleek online shopping experience with seamless checkout and inventory management.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="gallery-item" data-category="mobile">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Fitness Tracking App</h3>
+                            <p class="category">Mobile App</p>
+                            <p class="description">Cross-platform mobile app for tracking workouts and nutrition goals.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="gallery-item" data-category="branding">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Restaurant Rebranding</h3>
+                            <p class="category">Branding</p>
+                            <p class="description">Complete brand refresh including logo, menu design, and marketing materials.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="gallery-item" data-category="web">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Creative Portfolio Site</h3>
+                            <p class="category">Web Design</p>
+                            <p class="description">Stunning portfolio website for a photographer showcasing their best work.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="gallery-item" data-category="mobile">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Food Delivery Platform</h3>
+                            <p class="category">Mobile App</p>
+                            <p class="description">End-to-end food ordering and delivery mobile application.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="gallery-item" data-category="branding">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Tech Startup Branding</h3>
+                            <p class="category">Branding</p>
+                            <p class="description">Modern brand identity for an innovative tech startup company.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 7 -->
+                    <article class="gallery-item" data-category="web">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Real Estate Listing Portal</h3>
+                            <p class="category">Web Design</p>
+                            <p class="description">Comprehensive property listing platform with advanced search features.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 8 -->
+                    <article class="gallery-item" data-category="mobile">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Social Networking App</h3>
+                            <p class="category">Mobile App</p>
+                            <p class="description">Feature-rich social platform connecting people with shared interests.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 9 -->
+                    <article class="gallery-item" data-category="web">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Portfolio project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>SaaS Dashboard</h3>
+                            <p class="category">Web Design</p>
+                            <p class="description">Intuitive analytics dashboard for a B2B software platform.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Slider Modal -->
+        <div class="slider-modal" id="sliderModal">
+            <button class="slider-close" aria-label="Close slider">&times;</button>
+            <button class="slider-prev" aria-label="Previous image">&#10094;</button>
+            <button class="slider-next" aria-label="Next image">&#10095;</button>
+            <div class="slider-content">
+                <div class="slider-image">
+                    <div class="current-slide"></div>
+                </div>
+                <div class="slider-info">
+                    <h3 class="slider-title"></h3>
+                    <p class="slider-category"></p>
+                    <p class="slider-description"></p>
+                </div>
+            </div>
+            <div class="slider-counter">
+                <span class="current">1</span> / <span class="total">9</span>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's create something amazing together</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Creative<span>.</span></h3>
+                    <p>Building exceptional digital experiences for modern businesses.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: benardmachuka08@gmail.com</li>
+                        <li>Phone: +254111816896</li>
+                        <li>Address: Eldoret, Kenya</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/profile.php?id=100088177821885" aria-label="Facebook" target="_blank">FB</a>
+                        <a href="https://x.com/benny_bandit1" aria-label="Twitter" target="_blank">TW</a>
+                        <a href="https://www.instagram.com/its_atika.b/" aria-label="Instagram" target="_blank">IG</a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Creative Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
