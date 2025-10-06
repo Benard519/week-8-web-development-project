@@ -201,6 +201,7 @@ function initGallerySlider() {
 
     // Open slider on gallery item click
     galleryItems.forEach((item, index) => {
+        item.style.cursor = 'pointer';
         item.addEventListener('click', function() {
             currentIndex = Array.from(galleryItems).indexOf(item);
             openSlider();
@@ -306,8 +307,6 @@ function initContactForm() {
 
     // Form submission
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
         // Validate all fields
         const isNameValid = validateName();
         const isEmailValid = validateEmail();
@@ -315,11 +314,16 @@ function initContactForm() {
         const isSubjectValid = validateSubject();
         const isMessageValid = validateMessage();
 
-        // If all validations pass
+        // If all validations pass, let form submit naturally to Formspree
         if (isNameValid && isEmailValid && isPhoneValid && isSubjectValid && isMessageValid) {
-            submitForm();
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            return true;
         } else {
+            e.preventDefault();
             showFormStatus('Please correct the errors before submitting.', 'error');
+            return false;
         }
     });
 
@@ -427,33 +431,6 @@ function initContactForm() {
         }, 5000);
     }
 
-    function submitForm() {
-        // In a real application, this would send data to a server
-        // For this demo, we'll simulate a successful submission
-
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-
-        // Show loading state
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-
-        // Simulate API call
-        setTimeout(() => {
-            // Reset form
-            contactForm.reset();
-
-            // Reset button
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-
-            // Show success message
-            showFormStatus('Thank you for your message! We\'ll get back to you soon.', 'success');
-
-            // Scroll to status message
-            formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }, 1500);
-    }
 }
 
 /**
