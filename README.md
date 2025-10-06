@@ -86,6 +86,7 @@ project/
 - **Facebook**: https://web.facebook.com/profile.php?id=100088177821885
 - **Twitter/X**: https://x.com/benny_bandit1
 - **Instagram**: https://www.instagram.com/its_atika.b/
+- **live URL**: https://plp-web-project.netlify.app/
 
 ## License
 
